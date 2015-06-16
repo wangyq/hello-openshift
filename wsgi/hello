@@ -1,0 +1,19 @@
+#! /usr/bin/env python
+# -*- coding: utf-8 -*-
+"""
+This is a hello demo and must be run in python 2.7.x platform
+"""
+__author__ = 'yinqingwang@163.com'
+__version__ = '0.10'
+__license__ = 'MIT'
+
+
+from bottle import Bottle, route
+
+application = Bottle()
+app = application
+
+@app.route('/')
+def index():
+    return '<b>Hello world!</b>!'
+
